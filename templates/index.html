@@ -1,0 +1,19 @@
+{% from 'bootstrap5/form.html' import render_form %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ the_title }}</title>
+</head>
+<body>
+
+<div>
+    <h1>Livrets d'élève</h1>
+    <p> {{ render_form(form) }}</p>
+    <p> {{ message }}</p>
+</div>
+
+</body>
+</html>
